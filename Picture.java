@@ -24,6 +24,7 @@ public class Picture
     private Square sandcutoff;
     private Square sandcutoff2;
     private Square sandcutoff3;
+    private Square sandcutoff4;
     private Triangle sandmound;
     private Square moisturizer;
     private Square moistsky1;
@@ -53,6 +54,7 @@ public class Picture
         sandcutoff = new Square();
         sandcutoff2 = new Square();
         sandcutoff3 = new Square();
+        sandcutoff4 = new Square();
         sandmound = new Triangle();
         moisturizer = new Square();
         moistsky1 = new Square();
@@ -148,6 +150,12 @@ public class Picture
             sandcutoff3.moveVertical(250);
             sandcutoff3.changeSize(800);
             sandcutoff3.makeVisible();
+            
+            sandcutoff4.changeColor("yellow");
+            sandcutoff4.moveHorizontal(280);
+            sandcutoff4.moveVertical(120);
+            sandcutoff4.changeSize(600);
+            sandcutoff4.makeVisible();
             
             sandmound.changeColor("yellow");
             sandmound.changeSize(60, 180);
