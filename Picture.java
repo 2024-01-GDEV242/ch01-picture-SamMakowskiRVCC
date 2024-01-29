@@ -220,7 +220,29 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        
+        bluesky.changeColor("black");
+        mgntasky.changeColor("black");
+        orangsky.changeColor("black");
+        basesand.changeColor("white");
+        blackbase.changeColor("black");
+        blackmound.changeColor("black");
+        hut.changeColor("white");
+        hut2.changeColor("white");
+        hut3.changeColor("white");
+        hutdome.changeColor("white");
+        sandcutoff.changeColor("white");
+        sandcutoff2.changeColor("white");
+        sandcutoff3.changeColor("white");
+        sandcutoff4.changeColor("white");
+        sandmound.changeColor("white");
+        moisturizer.changeColor("black");
+        moistsky1.changeColor("black");
+        moistsky2.changeColor("black");
+        moist1.changeColor("black");
+        moist2.changeColor("black");
+        whitesun.changeColor("white");
+        redsun.changeColor("white");
+        luke.changeColor("white");
     }
 
     /**
@@ -228,6 +250,28 @@ public class Picture
      */
     public void setColor()
     {
-        
+        bluesky.changeColor("blue");
+        mgntasky.changeColor("magenta");
+        orangsky.changeColor("red");
+        basesand.changeColor("yellow");
+        blackbase.changeColor("black");
+        blackmound.changeColor("black");
+        hut.changeColor("yellow");
+        hut2.changeColor("yellow");
+        hut3.changeColor("yellow");
+        hutdome.changeColor("yellow");
+        sandcutoff.changeColor("yellow");
+        sandcutoff2.changeColor("yellow");
+        sandcutoff3.changeColor("yellow");
+        sandcutoff4.changeColor("yellow");
+        sandmound.changeColor("yellow");
+        moisturizer.changeColor("black");
+        moistsky1.changeColor("blue");
+        moistsky2.changeColor("magenta");
+        moist1.changeColor("black");
+        moist2.changeColor("black");
+        whitesun.changeColor("white");
+        redsun.changeColor("red");
+        luke.changeColor("white");
     }
 }
