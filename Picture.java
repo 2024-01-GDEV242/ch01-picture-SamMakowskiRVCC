@@ -11,10 +11,29 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+    private Square bluesky;
+    private Square mgntasky;
+    private Square orangsky;
+    private Square basesand;
+    private Square blackbase;
+    private Triangle blackmound;
+    private Square hut;
+    private Square hut2;
+    private Square hut3;
+    private Circle hutdome;
+    private Square sandcutoff;
+    private Square sandcutoff2;
+    private Square sandcutoff3;
+    private Square sandcutoff4;
+    private Triangle sandmound;
+    private Square moisturizer;
+    private Square moistsky1;
+    private Square moistsky2;
+    private Square moist1;
+    private Square moist2;
+    private Circle whitesun;
+    private Circle redsun;
+    private Person luke;
     private boolean drawn;
 
     /**
@@ -22,10 +41,29 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
+        bluesky = new Square();
+        mgntasky = new Square();
+        orangsky = new Square();
+        basesand = new Square();
+        blackbase = new Square();
+        blackmound = new Triangle(); 
+        hut = new Square();
+        hut2 = new Square();
+        hut3 = new Square();
+        hutdome = new Circle();
+        sandcutoff = new Square();
+        sandcutoff2 = new Square();
+        sandcutoff3 = new Square();
+        sandcutoff4 = new Square();
+        sandmound = new Triangle();
+        moisturizer = new Square();
+        moistsky1 = new Square();
+        moistsky2 = new Square();
+        moist1 = new Square();
+        moist2 = new Square();
+        whitesun = new Circle();
+        redsun = new Circle();
+        luke = new Person();
         drawn = false;
     }
 
@@ -35,27 +73,144 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+            bluesky.changeColor("blue");
+            bluesky.moveHorizontal(-320);
+            bluesky.moveVertical(-400);
+            bluesky.changeSize(800);
+            bluesky.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
-    
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-    
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            mgntasky.changeColor("magenta");
+            mgntasky.moveHorizontal(-320);
+            mgntasky.moveVertical(-730);
+            mgntasky.changeSize(800);
+            mgntasky.makeVisible();
+            
+            orangsky.changeColor("red");
+            orangsky.moveHorizontal(-320);
+            orangsky.moveVertical(-770);
+            orangsky.changeSize(800);
+            orangsky.makeVisible();
+            
+            basesand.changeColor("yellow");
+            basesand.moveHorizontal(-320);
+            basesand.moveVertical(100);
+            basesand.changeSize(800);
+            basesand.makeVisible();
+            
+            blackbase.changeColor("black");
+            blackbase.moveHorizontal(-320);
+            blackbase.moveVertical(130);
+            blackbase.changeSize(800);
+            blackbase.makeVisible();
+            
+            blackmound.changeColor("black");
+            blackmound.changeSize(60, 180);
+            blackmound.moveHorizontal(320);
+            blackmound.moveVertical(80);
+            blackmound.makeVisible();
+            
+            hut.changeColor("yellow");
+            hut.moveHorizontal(-150);
+            hut.moveVertical(140);
+            hut.changeSize(100);
+            hut.makeVisible();
+            
+            hut2.changeColor("yellow");
+            hut2.moveHorizontal(-250);
+            hut2.moveVertical(140);
+            hut2.changeSize(100);
+            hut2.makeVisible();
+            
+            hut3.changeColor("yellow");
+            hut3.moveHorizontal(-340);
+            hut3.moveVertical(140);
+            hut3.changeSize(100);
+            hut3.makeVisible();
+            
+            hutdome.changeColor("yellow");
+            hutdome.moveHorizontal(-230);
+            hutdome.moveVertical(70);
+            hutdome.changeSize(200);
+            hutdome.makeVisible();
+
+            sandcutoff.changeColor("yellow");
+            sandcutoff.moveHorizontal(-40);
+            sandcutoff.moveVertical(140);
+            sandcutoff.changeSize(100);
+            sandcutoff.makeVisible();
+            
+            sandcutoff2.changeColor("yellow");
+            sandcutoff2.moveHorizontal(60);
+            sandcutoff2.moveVertical(140);
+            sandcutoff2.changeSize(600);
+            sandcutoff2.makeVisible();
+            
+            sandcutoff3.changeColor("yellow");
+            sandcutoff3.moveHorizontal(-320);
+            sandcutoff3.moveVertical(250);
+            sandcutoff3.changeSize(800);
+            sandcutoff3.makeVisible();
+            
+            sandcutoff4.changeColor("yellow");
+            sandcutoff4.moveHorizontal(280);
+            sandcutoff4.moveVertical(120);
+            sandcutoff4.changeSize(600);
+            sandcutoff4.makeVisible();
+            
+            sandmound.changeColor("yellow");
+            sandmound.changeSize(60, 180);
+            sandmound.moveHorizontal(320);
+            sandmound.moveVertical(86);
+            sandmound.makeVisible();
+            
+            moisturizer.changeColor("black");
+            moisturizer.changeSize(30);
+            moisturizer.moveHorizontal(380);
+            moisturizer.moveVertical(60);
+            moisturizer.makeVisible();
+            
+            moistsky1.changeColor("blue");
+            moistsky1.changeSize(30);
+            moistsky1.moveHorizontal(378);
+            moistsky1.moveVertical(60);
+            moistsky1.makeVisible();
+            
+            moistsky2.changeColor("magenta");
+            moistsky2.changeSize(30);
+            moistsky2.moveHorizontal(378);
+            moistsky2.moveVertical(40);
+            moistsky2.makeVisible();
+            
+            moist1.changeColor("black");
+            moist1.changeSize(14);
+            moist1.moveHorizontal(403);
+            moist1.moveVertical(90);
+            moist1.makeVisible();
+            
+            moist2.changeColor("black");
+            moist2.changeSize(20);
+            moist2.moveHorizontal(400);
+            moist2.moveVertical(104);
+            moist2.makeVisible();
+            
+            whitesun.changeColor("white");
+            whitesun.moveHorizontal(340);
+            whitesun.moveVertical(40);
+            whitesun.changeSize(30);
+            whitesun.makeVisible();
+
+            redsun.changeColor("red");
+            redsun.moveHorizontal(380);
+            redsun.moveVertical(95);
+            redsun.changeSize(30);
+            redsun.makeVisible();
+            
+            luke.changeColor("white");
+            luke.moveHorizontal(100);
+            luke.moveVertical(20);
+            luke.changeSize(75,35);
+            luke.makeVisible();
+            
             drawn = true;
         }
     }
@@ -65,10 +220,29 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        bluesky.changeColor("black");
+        mgntasky.changeColor("black");
+        orangsky.changeColor("black");
+        basesand.changeColor("white");
+        blackbase.changeColor("black");
+        blackmound.changeColor("black");
+        hut.changeColor("white");
+        hut2.changeColor("white");
+        hut3.changeColor("white");
+        hutdome.changeColor("white");
+        sandcutoff.changeColor("white");
+        sandcutoff2.changeColor("white");
+        sandcutoff3.changeColor("white");
+        sandcutoff4.changeColor("white");
+        sandmound.changeColor("white");
+        moisturizer.changeColor("black");
+        moistsky1.changeColor("black");
+        moistsky2.changeColor("black");
+        moist1.changeColor("black");
+        moist2.changeColor("black");
+        whitesun.changeColor("white");
+        redsun.changeColor("white");
+        luke.changeColor("white");
     }
 
     /**
@@ -76,9 +250,28 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        bluesky.changeColor("blue");
+        mgntasky.changeColor("magenta");
+        orangsky.changeColor("red");
+        basesand.changeColor("yellow");
+        blackbase.changeColor("black");
+        blackmound.changeColor("black");
+        hut.changeColor("yellow");
+        hut2.changeColor("yellow");
+        hut3.changeColor("yellow");
+        hutdome.changeColor("yellow");
+        sandcutoff.changeColor("yellow");
+        sandcutoff2.changeColor("yellow");
+        sandcutoff3.changeColor("yellow");
+        sandcutoff4.changeColor("yellow");
+        sandmound.changeColor("yellow");
+        moisturizer.changeColor("black");
+        moistsky1.changeColor("blue");
+        moistsky2.changeColor("magenta");
+        moist1.changeColor("black");
+        moist2.changeColor("black");
+        whitesun.changeColor("white");
+        redsun.changeColor("red");
+        luke.changeColor("white");
     }
 }
